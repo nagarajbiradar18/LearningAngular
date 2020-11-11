@@ -1,0 +1,36 @@
+<p>gender works!</p>
+
+<h1>Example from ItsolutionStuff.com</h1>
+
+
+
+<table border="1">
+
+  <tr>
+
+    <th>ID</th>
+
+    <th>Name</th>
+
+    <th>Gender</th>
+
+    <th>Website</th>
+
+  </tr>
+
+  <tr *ngFor="let person of persons">
+
+    <td>{{ person.id }}</td>
+
+    <!-- <td>{{ person.name }}</td>-->
+
+    <td>{{ person.name | genderLabelPipe : person.gender }}</td> 
+
+
+   <td>{{ person.gender | genderPipe }}</td>
+
+    <td>{{ person.website }}</td>
+
+  </tr>
+
+</table>

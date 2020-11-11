@@ -1,0 +1,36 @@
+
+
+<nav>
+    <ul>
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+ 
+      <li><a routerLink="/dashboard/child-b" routerLinkActive="active">Dashboard Child B</a></li>
+
+      <li><a routerLink="/user" routerLinkActive="active">User</a></li>
+      <li><a routerLink="/profile" routerLinkActive="active">Profile</a></li>
+      
+      <li><a routerLink="/career" routerLinkActive="active">Career</a></li>
+      <li><a routerLink="/about-us" routerLinkActive="active">About Us</a></li>
+      <li><a routerLink="/customers" routerLinkActive="active">Customers</a></li>
+      <li><a routerLink="/orders" routerLinkActive="active">Orders</a></li>
+      
+      
+    </ul>
+  </nav>
+  
+<app-orders></app-orders>
+
+<div style="border: 1px solid red;">
+  <router-outlet></router-outlet>
+  </div>
+
+<!--
+<h1>Title {{title}}</h1>
+
+<input name="Nagaraj" value="Biradar" [(ngModel)]='title'  />
+
+
+
+<app-footer></app-footer>
+-->

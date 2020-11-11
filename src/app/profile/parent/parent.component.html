@@ -1,0 +1,5 @@
+<p>parent works!</p>
+
+<app-child [loggedInP]='loggedInParent' (close)="displayfromChild($event)"></app-child>
+
+<h3>{{fromChildVar}}</h3>
